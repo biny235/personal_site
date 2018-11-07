@@ -52,7 +52,6 @@ svg {
 }
 .nav_links { 
   grid-area: nav_links;
-  /* margin: 150px auto 0;  */
   padding: 0; 
   list-style: none; 
   display: grid;
