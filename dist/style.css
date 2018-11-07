@@ -5,6 +5,7 @@ body {
   
 }
 
+
 svg {
   width: auto; 
   height: 60px;
@@ -12,7 +13,13 @@ svg {
 
 .logo_r{
   fill:white;
+
 }
+.logo:hover .logo_r{
+  fill: rgba(255, 255, 255, 0.863);
+  transition: fill .2s ease-in-out;
+}
+
 
 .logo_b{
   fill:white;
@@ -22,11 +29,11 @@ svg {
 .cls-2{
   opacity:0.1;
 }
-.cls-2:hover{
-  opacity: .3;
-  transition: opacity .3s ease-in-out;
-}
+
+
+
 .cls-3{fill:#3d3d3d;}
+
 
 .nav {
   display: grid;
@@ -43,28 +50,42 @@ svg {
    padding-left: 20%;
    height: 60px;
 }
-
 .nav_links { 
-  grid-area: nav_links; 
-  list-style-type: none;
-  margin-block-start: 2em;
-  margin-block-end: 0;
-  margin-inline-start: 45%;
-  margin-inline-end: 0px;
-  padding-inline-start: 0;
-  color: white;
+  grid-area: nav_links;
+  /* margin: 150px auto 0;  */
+  padding: 0; 
+  list-style: none; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
 }
-.nav_item{
-  display: inline;
-  padding: 5%;
+.nav_item { 
+  position: relative; 
 }
-
-li{
-  border-right: .1px solid white;
+.nav_item a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em; 
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
 }
-
-li:last-child{
-  border-right: none;
+.nav_item a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.2s ease 0s, left 0.2s ease 0s;
+  width: 0;
+}
+.nav_item a:hover:after { 
+  width: 95%; 
+  left: 0; 
 }
 
 @media only screen and (min-width: 768px) {
