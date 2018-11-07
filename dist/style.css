@@ -33,6 +33,8 @@ body {
 
 
 .nav {
+  position: fixed;
+  width: 100%;
   display: grid;
   height: 5em;
   background: black;
@@ -75,13 +77,22 @@ body {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: white;
+  background: orangered;
   transition: width 0.2s ease 0s, left 0.2s ease 0s;
   width: 0;
+}
+.nav_item a:hover{
+  color: orangered;
+  transition: color 0.2s ease 0s, left 0.2s ease 0s;
 }
 .nav_item a:hover:after { 
   width: 95%; 
   left: 0; 
+}
+.slider{
+  height: 100%;
+  background: url("./img/header.jpeg") center;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 768px) {
@@ -91,7 +102,5 @@ body {
   }
   .nav_links{
     margin-inline-start: 70%;
-  }
- 
-  
+  }  
 }
