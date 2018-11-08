@@ -35,22 +35,18 @@ body {
 .nav {
   position: fixed;
   width: 100%;
-  display: grid;
   height: 5em;
   background: black;
-  grid-template-columns: 0.5fr 1fr;
-  grid-gap: 1px 1px;
-  grid-template-areas: "nav_logo nav_links";
   z-index: 1;
 }
-
 .nav_logo {
-   grid-area: nav_logo; 
-   padding-top: 10px;
-   padding-left: 20%;
-   height: 60px;
+  float: left;
+  padding: 10px;
+  height: 60px;
 }
-
+.nav_links{
+  float: right;
+}
 
 .nav_item {
   color: #fff;
@@ -91,10 +87,5 @@ body {
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .nav_logo{
-    padding-left: 10%;
-  }
-  .nav_links{
-    padding-left: 20%;
-  }  
+
 }
