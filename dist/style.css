@@ -50,27 +50,18 @@ body {
    padding-left: 20%;
    height: 60px;
 }
-.nav_links { 
-  grid-area: nav_links;
-  padding: 0; 
-  list-style: none; 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: left;
-}
-.nav_item { 
-  position: relative; 
-}
-.nav_item a {
+
+
+.nav_item {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.15em; 
+  letter-spacing: 0.1em; 
   display: inline-block;
-  padding: 15px 20px;
+  padding: 30px 20px;
   position: relative;
 }
-.nav_item a:after {    
+.nav_item:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -82,11 +73,11 @@ body {
   transition: width 0.2s ease 0s, left 0.2s ease 0s;
   width: 0;
 }
-.nav_item a:hover{
+.nav_item:hover{
   color: orangered;
   transition: color 0.2s ease 0s, left 0.2s ease 0s;
 }
-.nav_item a:hover:after { 
+.nav_item:hover:after { 
   width: 95%; 
   left: 0; 
 }
@@ -98,23 +89,12 @@ body {
 }
 
 
-/* .overlay:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  z-index:0;
-  background-color: rgba(255, 68, 0, 0.486);
-} */
-
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .nav_logo{
     padding-left: 10%;
   }
   .nav_links{
-    margin-inline-start: 70%;
+    padding-left: 20%;
   }  
 }
