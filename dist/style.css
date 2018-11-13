@@ -9,6 +9,9 @@ body {
   fill:orangered;
   transition: fill .2s ease-in-out;
 }
+.logo{
+  height: 60px;
+}
 .logo:hover .logo_r{
   fill: rgba(255, 255, 255, 0.863);
   transition: fill .2s ease-in-out;
@@ -22,7 +25,9 @@ body {
   opacity:0.1;
 }
 
-.cls-3{fill:#3d3d3d;}
+.cls-3{
+  fill:#3d3d3d;
+}
 
 .nav {
   position: fixed;
